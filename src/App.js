@@ -9,9 +9,9 @@ import themes from './styles/themes';
 class App extends React.Component {
   state = {
     changed: false,
-  }
+  };
   componentDidMount() {
-    console.log('componentDidMount executed')
+    console.log('componentDidMount executed');
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -19,11 +19,15 @@ class App extends React.Component {
       currentState: this.state,
       prevState,
       prevProps,
-    })
+    });
+  }
+
+  componentDidCatch(error, info) {
+    console.log('componentDidCatch ', { error, info });
   }
 
   render() {
-    console.log('rendered')
+    console.log('rendered');
     return (
       <ThemeProvider>
         <button onClick={() => this.setState({ changed: true })}>
