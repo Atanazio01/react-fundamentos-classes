@@ -19,6 +19,16 @@ export class ThemeProvider extends Component {
     };
   }
 
+  // Executa quando o componente é montado
+  componentDidMount() { }
+
+  // Monitorando alterações em variáveis com o componentDidUpdate
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.theme !== this.state.theme) {
+      console.log('tema Mudou...');
+    }
+  }
+
   // O setState pode receber uma callback como segundo argumento para utilizar o valor atualizado
   handleToggleTheme = () => {
     this.setState(prevState => ({
