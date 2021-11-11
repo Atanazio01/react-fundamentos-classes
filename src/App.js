@@ -10,20 +10,36 @@ class App extends React.Component {
   state = {
     changed: false,
   };
+
+  // Executa quando o componente é montado
   componentDidMount() {
     console.log('componentDidMount executed');
   }
 
+  // Executa após a rerenderização do componente
   componentDidUpdate(prevProps, prevState) {
-    console.log({
+    console.log('componentDidUpdate ', {
       currentState: this.state,
       prevState,
       prevProps,
     });
   }
 
+  // Pega erros e info do erro
   componentDidCatch(error, info) {
     console.log('componentDidCatch ', { error, info });
+  }
+
+  // Executa antes da rerenderização do componente
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log('shouldComponentUpdate ', {
+      currentState: this.state,
+      nextState,
+      nextProps,
+    });
+
+    // Return true se quiser que a rederização avance normalmente e false se quiser bloquera a renderização
+    return true;
   }
 
   render() {
