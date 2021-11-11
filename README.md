@@ -1,4 +1,4 @@
-<h1 align="center"><img alt="React" src="https://github.com/Atanazio01/react-fundamentos/blob/master/src/assets/images/0_BTRGNVTctSoTOKQu.jpeg" width="50%"> </h1>
+<h1 align="center"><img alt="React" src="https://github.com/Atanazio01/react-fundamentos-classes/blob/main/src/assets/images/react.jpeg" width="50%"> </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -23,21 +23,24 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Esse é um projeto simples desenvolvido durante o curso JStack, o intuíto desse projeto é aplicar os conceitos da bibliotéca React.
-Se trata de um blog simples onde podem ser inseridos posts e também alternar entre diferentes temas.
+Esse projeto se trata de um blog simples onde podem ser inseridos posts e também alternar entre diferentes temas.
+Nesse caso, foi feito um clone do projeto [react-fundamentos](https://github.com/Atanazio01/react-fundamentos-classes) desenvolvido durante o curso JStack utilizando componentes funcionais e react hooks com as práticas mais modernas no desenvolvimento de aplicações React.
+O clone do projeto foi feito e o código foi refatorado utilizando class components, para aplicar os conceitos e práticas utilizados em aplicações React utilizando componentes de classe, visto que em muitos projetos do mercado ainda são utilizados.
+
 Foram abordados temas como:
 
-- Babel
-- WebPack
-- Loaders
-- Servidor local de desenvolvimento
-- Componentes funcionais
-- React Fragment
-- Props / Children
-- Funções de Callbak via props
-- Context API
-- CSS / SASS / Styled Components
-- React Hooks
+- Componentes de Classe
+- Estrutura dos componentes de classe
+- State
+- Tipagem de props
+- Consumir a Context API
+- componentDidMount
+- componentDidUpdate
+- ComponentDidCath
+- ComponentWillUnmount
+- Salvar state no localStorage
+- Monitorar alterações de state ou prop
+- HOC para monitorar alterações na Context API
 
 ## ❓ Como executar
 
