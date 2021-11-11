@@ -14,6 +14,14 @@ class App extends React.Component {
     console.log('componentDidMount executed')
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log({
+      currentState: this.state,
+      prevState,
+      prevProps,
+    })
+  }
+
   render() {
     console.log('rendered')
     return (
