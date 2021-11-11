@@ -1,12 +1,10 @@
-import React, { useState, useMemo } from 'react';
-import useLocalState from './components/CustomHooks/useLocalState';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './styles/global';
 import Layout from './components/Layout';
 
 import themes from './styles/themes';
-
 class App extends React.Component {
   state = {
     theme: 'dark',
